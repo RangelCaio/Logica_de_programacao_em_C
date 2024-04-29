@@ -2,7 +2,7 @@
 
 int main(){
 
-    int vetor[10], i, qnt_negativos, soma_positivos;
+    int vetor[10], i, qnt_negativos = 0, soma_positivos = 0;
 
     printf("Digite 10 valores para o vetor: \n");
     for(i = 0; i < 10; i++){
