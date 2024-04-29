@@ -2,34 +2,23 @@
 
 int main(){
 
-    int matriz1[3][3], matriz2[3][3], i, j, operacao[3][3];
+    int vetor[10], i, qnt_negativos = 0, soma_positivos = 0;
 
-    printf("#Primeira matriz#\n");
-    for(i = 0; i < 3; i++){
-        for(j = 0; j < 3; j++){
-            printf("Digite o valor para a posicao: [%d][%d]\n", i, j);
-            scanf("%d", &matriz1[i][j]);
+    printf("Digite 10 valores para o vetor: \n");
+    for(i = 0; i < 10; i++){
+        printf("Digite o valor para a posicao: [%d]\n", i);
+        scanf("%d", &vetor[i]);
+
+        if(vetor[i] < 0) {
+            qnt_negativos++;
         }
-    }
-    printf("#Segunda matriz#\n");
-    for(i = 0; i < 3; i++){
-        for(j = 0; j < 3; j++){
-            printf("Digite o valor para a posicao: [%d][%d]\n", i, j);
-            scanf("%d", &matriz2[i][j]);
+
+        else if(vetor[i] >= 0) {
+            soma_positivos += vetor[i];
         }
-    }
-    for(i = 0; i < 3; i++){
-        for(j = 0; j < 3; j++){
-            operacao[i][j] = matriz1[i][j] * matriz2[i][j];
         }
-    }
-    printf("Resultado da multiplicacao das matrizes\n");
-    for(i = 0; i < 3; i++){
-        for(j = 0; j < 3; j++){
-            printf("%d   ", operacao[i][j]);
-        }
-        printf("\n\n");
-    }
+    printf("A quantidade de numeros negativos eh: %d\n", qnt_negativos);
+    printf("A soma dos numeros positivos eh: %d\n", soma_positivos);
 
 return 0;
 }
