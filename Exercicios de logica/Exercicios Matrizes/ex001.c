@@ -2,7 +2,7 @@
 
 int main() {
 
-    int matriz1[2][2], matriz2[2][2], i, j, opcao, soma[2][2], sub[2][2], k;
+    int matriz1[2][2], matriz2[2][2], i, j, opcao, operacao[2][2], k;
 
     for(i = 0; i < 2; i++) {
         for(j = 0; j < 2; j++) {
@@ -25,13 +25,13 @@ int main() {
     if(opcao == 1) {
         for(i = 0; i < 2; i++) {
             for(j = 0; j < 2; j++) {
-                soma[i][j] = matriz1[i][j] + matriz2[i][j];
+                operacao[i][j] = matriz1[i][j] + matriz2[i][j];
             }
         }
         printf("#Resultado da soma das duas matrizes#\n");
         for(i = 0; i < 2; i++) {
             for(j = 0; j < 2; j++) {
-                printf(" %d   ", soma[i][j]);
+                printf(" %d   ", operacao[i][j]);
             }
             printf("\n\n");
         }
@@ -39,13 +39,13 @@ int main() {
     if(opcao == 2) {
         for(i = 0; i < 2; i++) {
             for(j = 0; j < 2; j++) {
-                sub[i][j] = matriz1[i][j] - matriz2[i][j];
+                operacao[i][j] = matriz1[i][j] - matriz2[i][j];
             }
         }
         printf("#Resultado da subtracao das duas matrizes#\n");
         for(i = 0; i < 2; i++) {
             for(j = 0; j < 2; j++) {
-                printf(" %d   ", sub[i][j]);
+                printf(" %d   ", operacao[i][j]);
             }
             printf("\n\n");
         }
