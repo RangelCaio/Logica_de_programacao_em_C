@@ -1,24 +1,29 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
 
-    int vetor[10], i, qnt_negativos, soma_positivos;
+    int matriz1[3][3], i, j, quad[3][3];
 
-    printf("Digite 10 valores para o vetor: \n");
-    for(i = 0; i < 10; i++){
-        printf("Digite o valor para a posicao: [%d]\n", i);
-        scanf("%d", &vetor[i]);
-
-        if(vetor[i] < 0) {
-            qnt_negativos++;
+    printf("#Primeira matriz#\n");
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            printf("Digite o valor para a posicao: [%d][%d]\n", i, j);
+            scanf("%d", &matriz1[i][j]);
         }
-
-        else if(vetor[i] >= 0) {
-            soma_positivos += vetor[i];
+    }
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            quad[i][j] = matriz1[i][j] * matriz1[i][j];
         }
+    }
+    printf("Resultado do quadrado dos elementos das matrizes\n");
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            printf("%d   ", quad[i][j]);
         }
-    printf("A quantidade de numeros negativos eh: %d\n", qnt_negativos);
-    printf("A soma dos numeros positivos eh: %d\n", soma_positivos);
+        printf("\n\n");
+    }
 
 return 0;
 }
