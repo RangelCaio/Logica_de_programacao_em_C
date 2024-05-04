@@ -1,6 +1,6 @@
 #include <stdio.h>
 
- int main(){
+int main() {
 
     int vet[10], i, pos_maior = 0, pos_menor = 0;
     int maior, menor;
