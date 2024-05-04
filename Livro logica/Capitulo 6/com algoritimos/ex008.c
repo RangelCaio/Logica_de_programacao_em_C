@@ -21,7 +21,6 @@ int main() {
         vetor3[x++] = vetor2[i];
     }
 
-
     for(x = 0; x < 10; x++){
         for(y = 0; y < 10; y++){
             if(vetor1[x] < vetor1[y]){
