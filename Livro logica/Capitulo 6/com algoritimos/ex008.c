@@ -31,6 +31,7 @@ int main() {
             }
         }
     }
+
     for(x = 0; x < 10; x++){
         for(y = 0; y < 10; y++){
             if(vetor2[x] < vetor2[y]){
@@ -50,8 +51,6 @@ int main() {
             }
         }
     }
-
-
 
     printf("#Vetor1#\n");
     for(i = 0; i < 10; i++){
