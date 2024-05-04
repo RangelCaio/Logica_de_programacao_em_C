@@ -10,19 +10,18 @@ int main(){
         scanf("%d", &vetor[i]);
     }
     for(i = 0; i < 7; i++){
+
         if(vetor[i] % 2 == 0){
             mult2[qnt_mult2] = vetor[i];
             qnt_mult2++;
         }
-    }
-    for(i = 0; i < 7; i++){
-        if(vetor[i] % 3 == 0){
+
+        else if(vetor[i] % 3 == 0){
             mult3[qnt_mult3] = vetor[i];
             qnt_mult3++;
         }
-    }
-    for(i = 0; i < 7; i++){
-        if(vetor[i] % 2 == 0 && vetor[i] % 3 == 0){
+
+        else if(vetor[i] % 2 == 0 && vetor[i] % 3 == 0){
             mult23[qnt_mult23] = vetor[i];
             qnt_mult23++;
         }
