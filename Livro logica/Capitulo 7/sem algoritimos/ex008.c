@@ -20,21 +20,10 @@ int main() {
         }
     }
 
-    for (i = 0; i < 3; i++) {
-        for (j = 0; j < 8; j++) {
-            matrizsub[i][j] = matriz1[i][j] - matriz2[i][j];
-        }
-    }
-
-    for (i = 0; i < 3; i++) {
-        for (j = 0; j < 8; j++) {
-            matrizmult[i][j] = matriz1[i][j] * matriz2[i][j];
-        }
-    }
-
     printf("\nResultado da subtracao da matriz1 pela matriz2\n\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 8; j++) {
+            matrizsub[i][j] = matriz1[i][j] - matriz2[i][j];
             printf("%d  ", matrizsub[i][j]);
         }
         printf("\n");
@@ -43,6 +32,7 @@ int main() {
     printf("\nResultado da multiplicacao da matriz1 pela matriz2\n\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 8; j++) {
+            matrizmult[i][j] = matriz1[i][j] * matriz2[i][j];
             printf("%d  ", matrizmult[i][j]);
         }
         printf("\n");
