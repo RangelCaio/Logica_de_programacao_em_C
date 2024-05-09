@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+int funcao(int h, int m, int s){
+
+    int total = (h * 3600) + (m * 60) + s;
+
+    return total;
+}
+
 int main() {
 
     int h, m, s, total;
@@ -10,7 +17,7 @@ int main() {
     printf("Digite os minutos: \n");
     scanf("%d", &m);
 
-    printf("Digite os segundo: \n");
+    printf("Digite os segundos: \n");
     scanf("%d", &s);
 
     total = funcao(h, m, s);
@@ -19,11 +26,4 @@ printf("%dh, %dm, %ds correspondem a %d segundos.\n", h, m, s, total);
 
 
 return 0;
-}
-
-int funcao(int horas, int minutos, int segundos){
-
-    int total_seg = (horas * 3600) + (minutos * 60) + segundos;
-
-    return total_seg;
 }
